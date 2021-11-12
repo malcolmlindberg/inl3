@@ -1,3 +1,165 @@
+* {
+  padding: 0%;
+  box-sizing: border-box;
+}
 
+body {
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  font-family: "Balsamiq Sans", cursive;
+  background-color: #993366;
+  background-image: url(assets/Nighthawks_by_Edward_Hopper_1942.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 98%;
+  position: absolute;
+}
+
+h1 {
+  margin-top: 0%;
+  color: #cf8c10;
+  font-family: "Balsamiq Sans", cursive;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  display: none;
+}
+
+#todo-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+#todo-input, #todo-btn {
+  background-color: black;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #cf8c10;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+#todo-btn {
+  cursor: pointer;
+  background-color: #cf8c10;
+  color: #05386B;
+}
+
+.todo {
+  width: 90vw;
+  height: 9vh;
+  margin: 0.5rem;
+  background-color: #cf8c10;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  display: inline-flex;
+}
+
+.newlist-item {
+  flex: 1;
+}
+
+.btn-complete, .btn-close {
+  background-color: #000000;
+  color: black;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  border-radius: 2px;
+  height: 4vh;
+}
+
+.btn-complete, .btn-close {
+  background-color: rgba(207, 140, 16, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+::placeholder {
+  color: black;
+}
+
+.completed {
+  text-decoration: line-through black;
+  opacity: 0.8;
+}
+
+.far, .fas {
+  pointer-events: none;
+}
+
+#done-btn, #closing-btn {
+  background-color: #cf8c10;
+  border: none;
+  cursor: pointer;
+  flex: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    margin-top: 50px;
+  }
+
+  h1 {
+    padding-top: 20px;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #EDF5E1;
+    margin-top: 0%;
+    padding: 10px;
+    color: #cf8c10;
+    font-family: "Balsamiq Sans", cursive;
+    display: flex;
+    justify-content: center;
+  }
+
+  #todo-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    display: inline-flex;
+  }
+
+  .todo {
+    width: 30vw;
+    height: 7vh;
+  }
+
+  #todo-input, #todo-btn {
+    background-color: black;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #cf8c10;
+    font-family: "Balsamiq Sans", cursive;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
