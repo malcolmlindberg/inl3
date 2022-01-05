@@ -1,160 +1,113 @@
-
-*{
-    padding: 0%;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+  body{
+      position: relative;
+      justify-content: center;
+      background-size: cover;
+      background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a8/Nighthawks_by_Edward_Hopper_1942.jpg);
+      background-repeat: no-repeat;  
+      height: 100vh;
 
-body{
+         header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+        
+
+        }
+    }
+
+#btn-input-div{
+    display: flex;
+}    
+
+#todoForm{
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10px;
-    font-family: 'Balsamiq Sans', cursive;
-    background-color: rgb(153, 51, 102);
-    background-image: url(assets/Nighthawks_by_Edward_Hopper_1942.jpeg);  
-    background-size: cover;
-    background-repeat: no-repeat;  
-    height: auto;
-    width: 98%;
-    position: absolute;
-}
-
-h1{
-    margin-top: 0%;
-    color: rgb(207, 140, 16);
-    font-family: 'Balsamiq Sans', cursive;
-    display: flex;
-    justify-content: center;
-}
-
-a{
-    display: none;    
-}
-
-#todo-list{
-    display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column; 
-
-}
-
-form{
-    display: flex;
-    justify-content: center;
-}
-
-#todo-input, #todo-btn{
-    background-color: black;
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    border: none;
-    border-radius: 10px;
-    background-color: rgb(207, 140, 16);
-    font-family: 'Balsamiq Sans', cursive;
-}
-#todo-btn{
-    cursor: pointer;
-    background-color: rgb(207, 140, 16);
-    color: #05386B;
-}
-.todo{
-    width: 90vw;
-    height: 9vh;
-    margin: 0.5rem;
-    background-color:  rgb(207, 140, 16);
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    list-style: none;
-    border-radius: 5px;
-    padding: 0.5rem;
-    display: inline-flex;
+    .todoLi{
+        display: flex;
+        flex-direction: row;
+        .todoSpan{
+            width: 200px;
+            height: 30px;
+            background-color: blanchedalmond;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 5px;
+            box-shadow: grey 2px 2px 2px 2px ;
+        }
+        
+    }
 }
 
-.newlist-item{
-    flex: 1;
+h1, h4 {
+color: orange;
+background-color: rgba(0, 0, 0, 0.384);
+border-radius: 10px;
+padding: 5px;
 }
-
-.btn-complete, .btn-close{
-    background-color: #000000;
+.completeBtnStyle{
+    text-decoration: line-through;
     color: black;
-    border: none;
-    padding: 1rem;
-    cursor: pointer;
-    font-size: 0.8rem;
-    border-radius: 2px;  
-    height: 4vh;  
-}
-.btn-complete, .btn-close{
-    background-color: rgba(207, 140, 16, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-::placeholder{
-    color: black;
-}
-.completed{
-    text-decoration: line-through black;
     opacity: 0.8;
-}
-.far, .fas{
-    pointer-events: none;
-}
-#done-btn, #closing-btn{
-    background-color:rgb(207, 140, 16) ;
-    border: none;
+    text-shadow: grey 5px;
     cursor: pointer;
-    flex: 1;
+
 }
 
-@media only screen and (min-width: 768px){
+.completeBtn, .trashBtn{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: large;
+    cursor: pointer;
+    color: orange;
+    margin: 5px;
+}
+.completeBtn:hover, .trashBtn:hover{
+    color: grey;
+}
+
+
+#addBtn{
+    font-size: large;
+    cursor: pointer;
+    margin: 3px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    color: orange;
+}
+#addBtn:hover{
+    color:  rgb(82, 77, 77);
+
+}
+
+input{
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    width: 250px;
+    height: 32px;
+}
+
+@media only screen and (max-width: 600px){
     body{
         margin-top: 50px;
+        background-size: cover;
     }
 
     h1{
         padding-top: 20px;
     }
-    a{
-        display: flex;
-        justify-content: center;
-        font-size: 1.2rem;
-        color: #EDF5E1;
-        margin-top: 0%;
-        padding: 10px;
-        color: rgb(207, 140, 16);
-        font-family: 'Balsamiq Sans', cursive;
-        display: flex;
-        justify-content: center;
+    h4{
+        visibility: hidden;
     }
 
-    #todo-list{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-        display: inline-flex;  
-    }
-    .todo{
-        width: 30vw;
-        height: 7vh;
-    
-    
-    }
-    #todo-input, #todo-btn{
-        background-color: black;
-        font-size: 1.2rem;
-        padding: 0.5rem;
-        border: none;
-        border-radius: 10px;
-        padding: 10px;
-        background-color: rgb(207, 140, 16);
-        font-family: 'Balsamiq Sans', cursive;
-    
-    
-    }
 
 }
